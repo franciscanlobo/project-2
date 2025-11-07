@@ -18,7 +18,6 @@
   </head>
 
   <body>
-    <!-- Glassmorphic Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center" href="#Home">
@@ -43,7 +42,7 @@
         </button>
 
         <div
-          class="collapse navbar-collapse justify-content-end mx-5"
+          class="collapse navbar-collapse justify-content-end py-2 mx-5"
           id="navbarNav"
         >
           <ul class="navbar-nav">
@@ -57,7 +56,10 @@
               <a class="nav-link" href="#Destination">Destination</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="#Contacts">Contact</a>
+              <a class="nav-link" href="#Experiences">Experiences</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#Updates">Updates</a>
             </li>
           </ul>
         </div>
@@ -65,30 +67,38 @@
     </nav>
 
     <!-- Hero -->
-    <section class="hero-section" id="Home">
-      <video
-        class="w-100 d-block"
-        autoplay
-        loop
-        muted
-        playsinline
-        style="height: 100vh; object-fit: cover"
-      >
-        <source src="assets/videos/hero-banner.mp4" type="video/mp4" />
-      </video>
-      <div
-        class="content text-align-center position-absolute text-dark d-flex flex-column justify-content-center align-items-center"
-      >
-        <h1 class="fw-bold mx-2 mt-5 pt-5 text-center display-3">
-          Kyoto: The Heart of Japan’s Tradition
-        </h1>
-        <p class="fs-sm-5 fs-md-4 fs-lg-3 fw-light text-center mb-5">
-          Discover the timeless beauty and culture of Kyoto
-        </p>
-
-        <a href="#Destination" class="btn btn-light btn-md rounded-5 px-3 mt-5">
-          Explore Now
-        </a>
+    <section class="hero-section position-relative" id="Home">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-md-12 position-relative p-0">
+            <video
+              class="w-100 d-block"
+              autoplay
+              loop
+              muted
+              playsinline
+              style="height: 100vh; object-fit: cover"
+            >
+              <source src="assets/videos/hero-banner.mp4" type="video/mp4" />
+            </video>
+            <div
+              class="content text-align-center position-absolute text-dark d-flex flex-column justify-content-center align-items-center"
+            >
+              <h1 class="fw-bold mx-2 text-center display-3">
+                Kyoto: The Heart of Japan’s Tradition
+              </h1>
+              <p class="fs-sm-5 fs-md-4 fs-lg-3 fw-light text-center mb-5">
+                Discover the timeless beauty and culture of Kyoto
+              </p>
+              <a
+                href="#Destination"
+                class="btn btn-light btn-md rounded-5 px-3 mt-5"
+              >
+                Explore Now
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -195,19 +205,19 @@
         </p>
         <div class="row align-items-center">
           <div class="col-md-6">
-            <div class="card mx-3 mb-4 rounded-5">
+            <div class="about-card mx-4 mb-4 rounded-4">
               <img
                 src="assets/images/kyoto-card.jpg"
                 class="kyoto-card-img card-img-top"
                 alt="Temple Image"
               />
-              <div class="card-body px-4">
+              <div class="card-body px-4 mt-4">
                 <h4 class="card-title fw-bold">
                   Japan’s Former Imperial Capital
                 </h4>
                 <h6 class="mb-3">京都の古都としての歴史</h6>
 
-                <p class="card-text">
+                <p class="card-text pb-3">
                   For over a thousand years, Kyoto served as Japan’s political
                   and cultural heart. Its palaces, shrines, and gardens reflect
                   centuries of refined craftsmanship and court traditions,
@@ -218,18 +228,18 @@
           </div>
 
           <div class="col-md-6">
-            <div class="card mx-3 mb-4 rounded-5">
+            <div class="about-card mx-4 mb-4">
               <img
                 src="assets/images/kyoto-card2.jpg"
                 class="kyoto-card-img card-img-top"
                 alt="Temple Image"
               />
-              <div class="card-body px-4">
+              <div class="card-body px-4 mt-4">
                 <h4 class="card-title fw-bold">
                   Home to Iconic UNESCO Heritage Sites
                 </h4>
                 <h6 class="mb-3">世界遺産のまち</h6>
-                <p class="card-text">
+                <p class="card-text pb-4">
                   Kyoto holds some of Japan’s most significant temples and
                   shrines, including Kiyomizudera, Kinkakuji, and Fushimi Inari.
                   These sacred landmarks blend architecture, spirituality, and
@@ -242,18 +252,18 @@
 
         <div class="row align-items-center">
           <div class="col-md-6">
-            <div class="card mx-3 mb-4 rounded-5">
+            <div class="about-card mx-4 mb-4">
               <img
                 src="assets/images/kyoto-card3.jpg"
                 class="kyoto-card-img card-img-top"
                 alt="Temple Image"
               />
-              <div class="card-body px-4">
+              <div class="card-body px-4 mt-4">
                 <h4 class="card-title fw-bold">
                   Living Tradition & Handcrafted Culture
                 </h4>
                 <h6 class="mb-3">伝統工芸と文化芸能</h6>
-                <p class="card-text">
+                <p class="card-text pb-4">
                   Kyoto is known for artisanal crafts such as silk weaving, tea
                   ceramics, lacquerware, and kimono dyeing. These skills are
                   passed down through generations, keeping traditional Japanese
@@ -264,18 +274,18 @@
           </div>
 
           <div class="col-md-6">
-            <div class="card mx-3 mb-4 rounded-5">
+            <div class="about-card mx-4 mb-4">
               <img
                 src="assets/images/kyoto-card4.jpg"
                 class="kyoto-card-img card-img-top"
                 alt="Temple Image"
               />
-              <div class="card-body px-4">
+              <div class="card-body px-4 mt-4">
                 <h4 class="card-title fw-bold">
                   Birthplace of Manga & Cultural Storytelling
                 </h4>
                 <h6 class="mb-3">漫画文化の源流</h6>
-                <p class="card-text">
+                <p class="card-text pb-4">
                   Kyoto’s Kozanji Temple preserves the Chōjū-jinbutsu-giga, one
                   of Japan’s earliest manga-style illustrated scrolls. This
                   legacy continues today, influencing the country’s
@@ -288,38 +298,38 @@
 
         <div class="row align-items-center">
           <div class="col-md-6">
-            <div class="card mx-3 mb-4 rounded-5">
+            <div class="about-card mx-4 mb-4">
               <img
                 src="assets/images/kyoto-card5.jpg"
                 class="kyoto-card-img card-img-top"
                 alt="Temple Image"
               />
-              <div class="card-body px-4">
+              <div class="card-body px-4 mt-4">
                 <h4 class="card-title fw-bold">Refined Culinary Heritage</h4>
                 <h6 class="mb-3">京料理と食文化</h6>
-                <p class="card-text">
+                <p class="card-text pb-4">
                   Kyoto’s cuisine highlights subtle flavors and seasonality.
-                  From delicate kaiseki meals to matcha from Uji, the region’s
-                  food culture emphasizes balance, artistry, and the beauty of
-                  simple, thoughtful preparation.
+                  From delicate kaiseki mea pb-4ls to matcha from Uji, the
+                  region’s food culture emphasizes balance, artistry, and the
+                  beauty of simple, thoughtful preparation.
                 </p>
               </div>
             </div>
           </div>
 
           <div class="col-md-6">
-            <div class="card mx-3 mb-4 rounded-5">
+            <div class="about-card mx-4 mb-4">
               <img
                 src="assets/images/kyoto-card6.jpg"
                 class="kyoto-card-img card-img-top"
                 alt="Temple Image"
               />
-              <div class="card-body px-4">
+              <div class="card-body px-4 mt-4">
                 <h4 class="card-title fw-bold">
                   Harmony Between Old and Modern Life
                 </h4>
                 <h6 class="mb-3">人々が集まるまち</h6>
-                <p class="card-text">
+                <p class="card-text pb-4">
                   Kyoto remains a living city — not a museum. Wooden machiya
                   homes, teahouses, gardens, and festivals coexist with
                   contemporary shops, universities, and local neighborhoods,
@@ -389,7 +399,7 @@
     </section>
 
     <section class="destination" id="Destination">
-      <div class="container">
+      <div class="container p-5 destination-section">
         <h2 class="mb-5 text-center fw-bold display-4">Destinations</h2>
 
         <div class="row g-5 align-items-center">
@@ -543,6 +553,142 @@
           </div>
         </div>
       </section>
+    </section>
+
+    <section id="Experiences" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center fw-bold display-4">
+          Experience the most of Kyoto
+        </h2>
+        <div class="container mb-5">
+          <div
+            class="experience-card border-0 shadow-sm rounded-4 p-4 text-center"
+          >
+            <h3 class="fw-bold mb-3">Dive Into Kyoto</h3>
+            <p class="mb-0 fs-6">
+              Experience Kyoto beyond the temples — from tranquil tea ceremonies
+              to bustling festival streets. Discover unique cultural moments and
+              updates that make every visit unforgettable.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Experience 1 -->
+          <div class="col-md-4">
+            <div
+              class="card border-0 shadow-sm overflow-hidden rounded-4 position-relative"
+            >
+              <img
+                src="assets/images/kyoto-tea-ceremony.jpg"
+                class="card-img-top rounded-4 experience-img"
+                alt="Tea Ceremony in Kyoto"
+              />
+              <div class="card-body text-center">
+                <h5 class="fw-bold">Traditional Tea Ceremony</h5>
+                <p class="mb-0">
+                  Immerse yourself in the serene art of Japanese tea-making.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="col-md-4">
+            <div
+              class="card border-0 shadow-sm overflow-hidden rounded-4 position-relative"
+            >
+              <img
+                src="assets/images/walking-gion-streets.jpg"
+                class="card-img-top rounded-4 experience-img"
+                alt="Gion Streets"
+              />
+              <div class="card-body text-center">
+                <h5 class="fw-bold">Walking Gion Streets</h5>
+                <p class="mb-0">
+                  Stroll through Kyoto's historic geisha district and feel time
+                  slow down.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 3 -->
+          <div class="col-md-4">
+            <div
+              class="card border-0 shadow-sm overflow-hidden rounded-4 position-relative"
+            >
+              <img
+                src="assets/images/seasonal-festival.jpg"
+                class="card-img-top rounded-4 experience-img"
+                alt="Kyoto Festival"
+              />
+              <div class="card-body text-center">
+                <h5 class="fw-bold">Seasonal Festivals</h5>
+                <p class="mb-0">
+                  Experience Kyoto's vibrant seasonal festivals full of
+                  tradition and color.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="my-5 text-center fw-bold display-4" id="Updates">
+          Latest Updates
+        </h2>
+        <div class="row g-4">
+          <!-- Update 1 -->
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+              <div class="row g-0 align-items-center">
+                <div class="col-md-5">
+                  <img
+                    src="assets/images/kyoto-update1.jpg"
+                    class="img-fluid rounded-start-4 update-img"
+                    alt="Update Image 1"
+                  />
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <h6 class="fw-bold">Cherry Blossom Forecast 2025</h6>
+                    <p class="mb-0">
+                      Plan your visit with the latest cherry blossom forecast
+                      across Kyoto.
+                    </p>
+                    <small class="text-muted">April 1, 2025</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Update 2 -->
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+              <div class="row g-0 align-items-center">
+                <div class="col-md-5">
+                  <img
+                    src="assets/images/kyoto-update2.jpg"
+                    class="img-fluid rounded-start-4 update-img"
+                    alt="Update Image 2"
+                  />
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <h6 class="fw-bold">New Night Illumination Event</h6>
+                    <p class="mb-0">
+                      Kyoto temples light up in winter with mesmerizing
+                      illumination events.
+                    </p>
+                    <small class="text-muted">November 15, 2025</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <div class="end-section">
