@@ -19,14 +19,22 @@ h6 {
   font-family: "Cormorant Garamond", serif;
 }
 
-.navbar-nav .nav-link {
-  transition: color 0.3s ease, background-color 0.3s ease;
-  border-radius: 2rem;
-  color: #212529;
+.navbar {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px) saturate(180%) brightness(120%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%) brightness(120%);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
-.navbar-nav .nav-link:hover {
-  color: #567a9e;
+.glass-navbar .nav-link {
+  color: #000;
+  transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #007bff;
+  transition: color 0.3s;
 }
 
 .hero-section {
