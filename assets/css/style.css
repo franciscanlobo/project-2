@@ -7,6 +7,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
   background-color: #f5f5f5;
   color: #333;
   font-family: "Inter", sans-serif;
-  padding-top: 70px;
+  padding-top: 50px;
 }
 
 h1,
@@ -68,6 +69,19 @@ h6 {
   object-fit: cover;
 }
 
+.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(245, 245, 245, 0) 0%,
+    rgba(245, 245, 245, 0.2) 60%,
+    rgba(245, 245, 245, 1) 100%
+  );
+}
+
 @media (max-width: 991.98px) {
   .hero-section {
     height: calc(100vh - 56px);
@@ -83,19 +97,6 @@ h6 {
 
 .hero-content {
   z-index: 1;
-}
-
-.hero-section::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: linear-gradient(
-    to bottom,
-    rgba(245, 245, 245, 0) 0%,
-    rgba(245, 245, 245, 0.2) 60%,
-    rgba(245, 245, 245, 1) 100%
-  );
 }
 
 .content {
@@ -233,6 +234,28 @@ h6 {
   object-fit: cover;
   border-radius: 10px;
   transition: transform 0.4s ease;
+}
+
+.closing-line-section {
+  background: linear-gradient(
+    to bottom,
+    rgba(245, 245, 245, 0) 0%,
+    rgba(245, 245, 245, 0.4) 40%,
+    rgba(245, 245, 245, 1) 100%
+  );
+}
+
+.japanese-line {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  letter-spacing: 2px;
+}
+
+.line-translation {
+  font-size: 1.1rem;
+  color: #555;
 }
 
 .end-section {
