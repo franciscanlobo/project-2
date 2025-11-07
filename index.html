@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kyoto Travel</title>
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-    crossorigin="anonymous"
-  />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-
 
   <body>
     <!-- Navbar -->
@@ -54,7 +56,7 @@
               <a class="nav-link" href="#About">About</a>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link" href="#destination">Destination</a>
+              <a class="nav-link" href="#Destination">Destination</a>
             </li>
             <li class="nav-item px-4">
               <a class="nav-link" href="#Contacts">Contact</a>
@@ -65,32 +67,743 @@
     </nav>
 
     <!-- Hero -->
-
-    <div class="hero-section" id="hero">
+    <section class="hero-section" id="Home">
       <video
         class="w-100 d-block"
         autoplay
         loop
         muted
         playsinline
-        style="height: 100vh; object-fit: cover""
+        style="height: 100vh; object-fit: cover"
       >
         <source src="assets/videos/hero-banner.mp4" type="video/mp4" />
       </video>
-
-      <div class="content text-align-center position-absolute text-dark d-flex flex-column justify-content-center align-items-center">
-        <h1 class="fw-bold mx-2 mt-5 pt-5 text-center" style="font-size: 4rem">
+      <div
+        class="content text-align-center position-absolute text-dark d-flex flex-column justify-content-center align-items-center"
+      >
+        <h1 class="fw-bold mx-2 mt-5 pt-5 text-center display-3">
           Kyoto: The Heart of Japan’s Tradition
         </h1>
-        <h5 class="fw-light text-center mb-5">
+        <p class="fs-5 fw-light mx-2 mb-5 text-center">
           Discover the timeless beauty and culture of Kyoto
-        </h5>
-      
-        <a href="#destination" class="btn btn-light btn-lg fw-semibold rounded-5 mt-4">
+        </p>
+        <a href="#destination" class="btn btn-light btn-md rounded-5 px-3 mt-5">
           Explore Now
         </a>
       </div>
-      
+    </section>
+
+    <section id="About" class="py-5">
+      <div class="container">
+        <h2 class="mb-4 text-center fw-bold display-4">
+          Learn More About Kyoto
+        </h2>
+
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p>
+              Kyoto City has a living culture that has been handed down for over
+              a thousand years. You can feel it in how the streets, kimono,
+              shrines, and temples make you aware of the changing of the
+              seasons.
+            </p>
+            <p>
+              It is our responsibility as people living today to pass on the
+              city that has nurtured this irreplaceable culture, so that it will
+              flourish another thousand years.
+            </p>
+            <p>
+              This is a culture we want to cultivate together. It is not only
+              for those who reside and work here, but also for those who visit
+              Kyoto to experience the traditions that live on in this city.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                ></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/images/kyoto-city.jpg"
+                    class="gallery-img d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/images/kyoto-city2.jpg"
+                    class="gallery-img d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/images/kyoto-city3.jpg"
+                    class="gallery-img d-block w-100"
+                  />
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2 class="mt-5 text-center fw-bold display-4">
+          What's special about Kyoto?
+        </h2>
+        <p class="text-center mb-5 fs-6 w-75 mx-auto">
+          What makes Kyoto such a well-loved and highly regarded city?
+          <br />Here are a few points that can help in answering that question.
+        </p>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="card mx-3 mb-4 rounded-5">
+              <img
+                src="assets/images/kyoto-card.jpg"
+                class="kyoto-card-img card-img-top"
+                alt="Temple Image"
+              />
+              <div class="card-body px-4">
+                <h4 class="card-title fw-bold">
+                  Japan’s Former Imperial Capital
+                </h4>
+                <h6 class="mb-3">京都の古都としての歴史</h6>
+
+                <p class="card-text">
+                  For over a thousand years, Kyoto served as Japan’s political
+                  and cultural heart. Its palaces, shrines, and gardens reflect
+                  centuries of refined craftsmanship and court traditions,
+                  preserving the elegance of Japan’s classical era.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card mx-3 mb-4 rounded-5">
+              <img
+                src="assets/images/kyoto-card2.jpg"
+                class="kyoto-card-img card-img-top"
+                alt="Temple Image"
+              />
+              <div class="card-body px-4">
+                <h4 class="card-title fw-bold">
+                  Home to Iconic UNESCO Heritage Sites
+                </h4>
+                <h6 class="mb-3">世界遺産のまち</h6>
+                <p class="card-text">
+                  Kyoto holds some of Japan’s most significant temples and
+                  shrines, including Kiyomizudera, Kinkakuji, and Fushimi Inari.
+                  These sacred landmarks blend architecture, spirituality, and
+                  nature into immersive, contemplative experiences.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="card mx-3 mb-4 rounded-5">
+              <img
+                src="assets/images/kyoto-card3.jpg"
+                class="kyoto-card-img card-img-top"
+                alt="Temple Image"
+              />
+              <div class="card-body px-4">
+                <h4 class="card-title fw-bold">
+                  Living Tradition & Handcrafted Culture
+                </h4>
+                <h6 class="mb-3">伝統工芸と文化芸能</h6>
+                <p class="card-text">
+                  Kyoto is known for artisanal crafts such as silk weaving, tea
+                  ceramics, lacquerware, and kimono dyeing. These skills are
+                  passed down through generations, keeping traditional Japanese
+                  artistry alive in a modern world.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card mx-3 mb-4 rounded-5">
+              <img
+                src="assets/images/kyoto-card4.jpg"
+                class="kyoto-card-img card-img-top"
+                alt="Temple Image"
+              />
+              <div class="card-body px-4">
+                <h4 class="card-title fw-bold">
+                  Birthplace of Manga & Cultural Storytelling
+                </h4>
+                <h6 class="mb-3">漫画文化の源流</h6>
+                <p class="card-text">
+                  Kyoto’s Kozanji Temple preserves the Chōjū-jinbutsu-giga, one
+                  of Japan’s earliest manga-style illustrated scrolls. This
+                  legacy continues today, influencing the country’s
+                  storytelling, animation, and pop culture identity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="card mx-3 mb-4 rounded-5">
+              <img
+                src="assets/images/kyoto-card5.jpg"
+                class="kyoto-card-img card-img-top"
+                alt="Temple Image"
+              />
+              <div class="card-body px-4">
+                <h4 class="card-title fw-bold">Refined Culinary Heritage</h4>
+                <h6 class="mb-3">京料理と食文化</h6>
+                <p class="card-text">
+                  Kyoto’s cuisine highlights subtle flavors and seasonality.
+                  From delicate kaiseki meals to matcha from Uji, the region’s
+                  food culture emphasizes balance, artistry, and the beauty of
+                  simple, thoughtful preparation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card mx-3 mb-4 rounded-5">
+              <img
+                src="assets/images/kyoto-card6.jpg"
+                class="kyoto-card-img card-img-top"
+                alt="Temple Image"
+              />
+              <div class="card-body px-4">
+                <h4 class="card-title fw-bold">
+                  Harmony Between Old and Modern Life
+                </h4>
+                <h6 class="mb-3">人々が集まるまち</h6>
+                <p class="card-text">
+                  Kyoto remains a living city — not a museum. Wooden machiya
+                  homes, teahouses, gardens, and festivals coexist with
+                  contemporary shops, universities, and local neighborhoods,
+                  creating a quiet balance of past and present.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2 class="mt-5 text-center fw-bold display-4">
+          Kyoto Through the Seasons
+        </h2>
+        <p class="text-center mb-5 fs-6 w-75 mx-auto">
+          Kyoto is a city that transforms with the seasons. Its temples,
+          gardens, and streets reflect the subtle rhythms of nature — inviting
+          visitors to return and rediscover the city again and again.
+        </p>
+        <div class="row">
+          <div class="col-md-3 text-center mb-4">
+            <img
+              src="assets/images/spring-kyoto.jpg"
+              class="season-img mb-3 rounded-4"
+              alt="Spring in Kyoto"
+            />
+            <h3 class="fw-bold mb-1">Spring</h3>
+            <h5 class="mb-3">(March-April)</h5>
+            <p>Cherry blossoms paint the city in soft pink hues.</p>
+          </div>
+
+          <div class="col-md-3 text-center mb-4">
+            <img
+              src="assets/images/summer-kyoto.jpg"
+              class="season-img mb-3 rounded-4"
+              alt="Summer in Kyoto"
+            />
+            <h3 class="fw-bold mb-1">Summer</h3>
+            <h5 class="mb-3">(July-August)</h5>
+            <p>Lush greenery and vibrant festivals fill the streets.</p>
+          </div>
+
+          <div class="col-md-3 text-center mb-4">
+            <img
+              src="assets/images/autumn-kyoto.jpg"
+              class="season-img mb-3 rounded-4"
+              alt="Autumn in Kyoto"
+            />
+            <h3 class="fw-bold mb-1">Autumn</h3>
+            <h5 class="mb-3">(October-Novemer)</h5>
+            <p>Fiery maple leaves create a breathtaking landscape.</p>
+          </div>
+
+          <div class="col-md-3 text-center mb-4">
+            <img
+              src="assets/images/winter-kyoto.jpg"
+              class="season-img mb-3 rounded-4"
+              alt="Winter in Kyoto"
+            />
+            <h3 class="fw-bold mb-1">Winter</h3>
+            <h5 class="mb-3">(December-Winter)</h5>
+            <p>Snow-covered temples evoke a serene, timeless beauty.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="destination" id="Destination">
+      <div class="container">
+        <h2 class="mb-5 text-center fw-bold display-4">Destinations</h2>
+
+        <div class="row g-5 align-items-center">
+          <div class="col-md-5">
+            <div class="video-wrapper shadow-lg mb-2">
+              <video
+                class="w-100 h-auto d-block rounded-4"
+                autoplay
+                loop
+                muted
+                playsinline
+              >
+                <source
+                  src="assets/videos/destination-vid.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+
+            <p class="video-caption text-center mt-3">
+              <strong>Kinkaku-ji</strong> (The Golden Pavilion),<br />
+              a Zen Buddhist temple in Kyoto.
+            </p>
+          </div>
+
+          <div class="col-md-7">
+            <div class="destination-text pe-md-4">
+              <p>
+                Kyoto is a city where everyday scenery feels like a work of art
+                — from quiet stone pathways lined with moss temples to bustling
+                markets filled with seasonal flavors. Each district holds its
+                own character, from the shimmering pavilion of Kinkaku-ji
+                reflecting in still water to the endless torii paths of Fushimi
+                Inari climbing into misty mountain trails. Whether you’re
+                seeking serene gardens, sacred shrines, or refined cultural
+                experiences, Kyoto invites you to wander slowly and discover
+                beauty at your own pace.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="destination-cards mt-5">
+        <div class="container">
+          <h2 class="mb-5 text-center fw-bold display-4">
+            Places to Experience Kyoto
+          </h2>
+
+          <div class="row g-5">
+            <!-- Destination 1 -->
+            <div class="col-md-4">
+              <div class="card border-0 text-center shadow-sm">
+                <div class="position-relative overflow-hidden rounded-2">
+                  <img
+                    src="assets/images/fushi-inari.jpg"
+                    class="card-img-top destination-img"
+                    alt="Fushimi Inari Taisha"
+                  />
+                  <div
+                    class="destination-overlay d-flex justify-content-center align-items-center"
+                  >
+                    <a
+                      href="#"
+                      class="overlay-link"
+                      data-bs-toggle="modal"
+                      data-bs-target="#fushimiModal"
+                    >
+                      View Details
+                    </a>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h4 class="fw-bold">Fushimi Inari Taisha</h4>
+                  <p class="mb-0">
+                    Walk through endless gates at Fushimi Inari, where every
+                    step feels like entering another world.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Destination 2 -->
+            <div class="col-md-4">
+              <div
+                class="card border-0 text-center shadow-sm position-relative overflow-hidden"
+              >
+                <div class="position-relative overflow-hidden rounded-2">
+                  <img
+                    src="assets/images/bamboo-forest.jpg"
+                    class="card-img-top destination-img rounded-2"
+                    alt="Arashiyama Bamboo Grove"
+                  />
+                  <div
+                    class="destination-overlay d-flex justify-content-center align-items-center"
+                  >
+                    <a
+                      href="#bambooModal"
+                      class="overlay-link"
+                      data-bs-toggle="modal"
+                      data-bs-target="#bambooModal"
+                    >
+                      View Details
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h4 class="fw-bold">Arashiyama Bamboo Grove</h4>
+                  <p class="mb-0">
+                    Lose yourself in the rustle of bamboo — a sound that defines
+                    the calm soul of Kyoto.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Destination 3 -->
+            <div class="col-md-4">
+              <div
+                class="card border-0 text-center shadow-sm position-relative overflow-hidden"
+              >
+                <div class="position-relative overflow-hidden rounded-2">
+                  <img
+                    src="assets/images/kinkakuji.jpg"
+                    class="card-img-top destination-img rounded-2"
+                    alt="Kinkaku-ji (Golden Pavilion)"
+                  />
+                  <div
+                    class="destination-overlay d-flex justify-content-center align-items-center"
+                  >
+                    <a
+                      href="#kinkakuModal"
+                      class="overlay-link"
+                      data-bs-toggle="modal"
+                      data-bs-target="#kinkakuModal"
+                    >
+                      View Details
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h4 class="fw-bold">Kinkaku-ji (Golden Pavilion)</h4>
+                  <p class="mb-0">
+                    A temple that glows like the rising sun — Kinkaku-ji
+                    reflects Kyoto’s golden legacy.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <div class="end-section">
+      <video
+        class="w-100 d-block"
+        autoplay
+        loop
+        muted
+        playsinline
+        style="height: 100vh; object-fit: cover"
+      >
+        <source src="assets/videos/end-banner.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <footer class="text-center p-4 bg-dark text-white">
+      <small> &copy; 2024 KyotoScape. All rights reserved. </small>
+      <br />
+      <img
+        src="assets/images/KyotoScape-Logo2.png"
+        alt="KyotoScape Logo"
+        width="120"
+      />
+    </footer>
+
+    <!-- Fushimi Inari Modal -->
+    <div
+      class="modal fade"
+      id="fushimiModal"
+      tabindex="-1"
+      aria-labelledby="fushimiLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="d-flex flex-column">
+              <h5 class="modal-title fw-bold" id="fushimiLabel">
+                Fushimi Inari Taisha
+              </h5>
+              <small class="text-muted">伏見稲荷大社</small>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <img
+              src="assets/images/fushi-inari.jpg"
+              class="img-fluid rounded mb-3"
+              alt="Fushimi Inari Taisha"
+            />
+            <div class="modal-body">
+              <p>
+                Fushimi Inari Taisha is Kyoto’s most iconic Shinto shrine,
+                dedicated to
+                <strong>Inari Ōkami</strong>—the deity of rice, prosperity, and
+                good fortune. Founded in <strong>711 A.D.</strong>, it’s famous
+                for its <strong>thousands of vermilion torii gates</strong>
+                (Senbon Torii) that lead up sacred Mount Inari.
+              </p>
+
+              <h6 class="fw-bold mt-3">Highlights</h6>
+              <ul>
+                <li>
+                  <strong>Senbon Torii:</strong> Endless red gates donated for
+                  blessings.
+                </li>
+                <li>
+                  <strong>Fox Statues (Kitsune):</strong> Messengers of Inari,
+                  symbolizing protection and wisdom.
+                </li>
+                <li>
+                  <strong>Mount Inari Trail:</strong> 4 km scenic hike with
+                  smaller shrines and Kyoto views.
+                </li>
+              </ul>
+
+              <h6 class="fw-bold mt-3">Visitor Info</h6>
+              <ul>
+                <li><strong>Open:</strong> 24 hours, free admission</li>
+                <li><strong>Best Time:</strong> Early morning or evening</li>
+                <li><strong>Duration:</strong> 2–3 hours</li>
+                <li>
+                  <strong>Tip:</strong> Wear comfy shoes and be respectful at
+                  shrines
+                </li>
+              </ul>
+
+              <h6 class="fw-bold mt-3">Getting There</h6>
+              <p>
+                From Kyoto Station, take the <strong>JR Nara Line</strong> to
+                <strong>Inari Station</strong>
+                (5 minutes). The shrine entrance is right across the station.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bamboo Grove Modal -->
+    <div
+      class="modal fade"
+      id="bambooModal"
+      tabindex="-1"
+      aria-labelledby="bambooLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="d-flex flex-column">
+              <h5 class="modal-title fw-bold" id="bambooLabel">
+                Arashiyama Bamboo Grove
+              </h5>
+              <small class="text-muted">嵐山竹林の小径</small>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <img
+              src="assets/images/bamboo-forest.jpg"
+              class="img-fluid rounded mb-3"
+              alt="Arashiyama Bamboo Grove"
+            />
+
+            <div class="modal-body">
+              <p>
+                The Arashiyama Bamboo Grove offers a peaceful walk through
+                towering green bamboo stalks. The light and wind through the
+                bamboo create one of Kyoto’s most serene experiences.
+              </p>
+
+              <h6 class="fw-bold mt-3">Highlights</h6>
+              <ul>
+                <li>
+                  <strong>Bamboo Pathway:</strong> A 500-meter scenic trail
+                  surrounded by dense bamboo.
+                </li>
+                <li>
+                  <strong>Tenryu-ji Temple:</strong> UNESCO World Heritage site
+                  adjacent to the grove.
+                </li>
+                <li>
+                  <strong>Togetsukyo Bridge:</strong> Famous nearby landmark
+                  offering views of Arashiyama’s landscape.
+                </li>
+              </ul>
+
+              <h6 class="fw-bold mt-3">Visitor Info</h6>
+              <ul>
+                <li><strong>Open:</strong> 24 hours, free admission</li>
+                <li>
+                  <strong>Best Time:</strong> Early morning for fewer visitors
+                </li>
+                <li><strong>Duration:</strong> Around 1 hour</li>
+                <li>
+                  <strong>Tip:</strong> Visit at sunrise for soft lighting and
+                  quieter paths
+                </li>
+              </ul>
+
+              <h6 class="fw-bold mt-3">Getting There</h6>
+              <p>
+                From Kyoto Station, take the <strong>JR Sagano Line</strong> to
+                <strong>Saga-Arashiyama Station</strong>
+                (15 minutes), then walk 10 minutes to the grove.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kinkaku-ji Modal -->
+    <div
+      class="modal fade"
+      id="kinkakuModal"
+      tabindex="-1"
+      aria-labelledby="kinkakuLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="d-flex flex-column">
+              <h5 class="modal-title fw-bold" id="kinkakuLabel">
+                Kinkaku-ji (Golden Pavilion)
+              </h5>
+              <small class="text-muted">金閣寺</small>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <img
+              src="assets/images/kinkakuji.jpg"
+              class="img-fluid rounded mb-3"
+              alt="Kinkaku-ji (Golden Pavilion)"
+            />
+
+            <div class="modal-body">
+              <p>
+                The Golden Pavilion is one of Kyoto’s most stunning landmarks.
+                Its top floors are covered in gold leaf and reflected
+                beautifully in the surrounding pond, symbolizing harmony between
+                heaven and earth.
+              </p>
+
+              <h6 class="fw-bold mt-3">Highlights</h6>
+              <ul>
+                <li>
+                  <strong>Golden Pavilion:</strong> A three-story structure
+                  symbolizing harmony between heaven and earth.
+                </li>
+                <li>
+                  <strong>Kyoko-chi Pond:</strong> Mirror-like water reflecting
+                  the pavilion and nearby pines.
+                </li>
+                <li>
+                  <strong>Tea Garden:</strong> Small teahouse serving
+                  traditional matcha and sweets.
+                </li>
+              </ul>
+
+              <h6 class="fw-bold mt-3">Visitor Info</h6>
+              <ul>
+                <li><strong>Open:</strong> 9:00 AM – 5:00 PM</li>
+                <li><strong>Admission:</strong> ¥500</li>
+                <li>
+                  <strong>Best Time:</strong> Autumn and winter for vivid
+                  reflections
+                </li>
+                <li><strong>Duration:</strong> Around 1 hour</li>
+              </ul>
+
+              <h6 class="fw-bold mt-3">Getting There</h6>
+              <p>
+                From Kyoto Station, take a
+                <strong>City Bus 101 or 205</strong> to
+                <strong>Kinkaku-ji Michi Stop</strong>
+                (about 40 minutes), then walk 5 minutes to the temple.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
